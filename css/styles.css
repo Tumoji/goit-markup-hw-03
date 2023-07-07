@@ -16,6 +16,37 @@ a:visited {
   color: inherit;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.global-header {
+  display: flex;
+  width: 1200px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+.header-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 290px;
+}
+.menu {
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+}
+
 nav > ul > li > .menu {
   text-decoration: none;
   color: #212121;
@@ -32,7 +63,6 @@ ul {
 .link:hover {
   color: var(--link-color-hover);
 }
-
 
 .contact {
   color: #757575;
@@ -103,4 +133,35 @@ button:hover {
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 1.08px;
+}
+.projects {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-buttons-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(44, 59, 72);
+}
+.portfolio-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 516px;
+}
+main {
+  background-color: aquamarine;
+}
+.portfolio-container {
+  display: flex;
+}
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.global-footer {
+  display: flex;
 }
