@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/fonts.css" />
@@ -12,12 +13,12 @@
 
   <body class="container">
     <header class="global-header">
+      <div>
+        <a href="index.html" class="logo"
+          ><span class="logo-web">Web</span>Studio</a
+        >
+      </div>
       <div class="nav-header">
-        <div>
-          <a href="index.html" class="logo"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-        </div>
         <nav>
           <ul class="menu">
             <li><a href="index.html" class="link">Studio</a></li>
@@ -34,6 +35,7 @@
         >
       </div>
     </header>
+    <div class="border-header"></div>
     <main class="projects">
       <div class="portfolio-buttons-container">
         <ul class="portfolio-buttons">
@@ -46,7 +48,7 @@
       </div>
       <section class="portfolio-container">
         <ul class="portfolio-projects">
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -54,11 +56,13 @@
                 src="images/technoduck.jpg"
                 alt="technoduck"
               />
-              <h6>Technoduck</h6>
-              <p>Web-site</p>
+              <div class="project-description">
+                <h3>Technoduck</h3>
+                <p>Web-site</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -66,11 +70,13 @@
                 src="images/poster.jpg"
                 alt="Poster New Orlean vs Golden Star"
               />
-              <h6>Poster New Orlean vs Golden Star</h6>
-              <p>Design</p>
+              <div class="project-description">
+                <h3>Poster New Orlean vs Golden Star</h3>
+                <p>Design</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -78,11 +84,13 @@
                 src="images/seafood_restaurant.jpg"
                 alt="Seafood Restaurant"
               />
-              <h6>Seafood Restaurant</h6>
-              <p>Apps</p>
+              <div class="project-description">
+                <h3>Seafood Restaurant</h3>
+                <p>Apps</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -90,11 +98,13 @@
                 src="images/project_prime.jpg"
                 alt="Project Prime"
               />
-              <h6>Project Prime</h6>
-              <p>Marketing</p>
+              <div class="project-description">
+                <h3>Project Prime</h3>
+                <p>Marketing</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -102,11 +112,13 @@
                 src="images/project_boxes.jpg"
                 alt="Project Boxes"
               />
-              <h6>Project Boxes</h6>
-              <p>Apps</p>
+              <div class="project-description">
+                <h3>Project Boxes</h3>
+                <p>Apps</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -114,11 +126,13 @@
                 src="images/insipartion.jpg"
                 alt="Inspiration has no Borders"
               />
-              <h6>Inspiration has no Borders</h6>
-              <p>Web-site</p>
+              <div class="project-description">
+                <h3>Inspiration has no Borders</h3>
+                <p>Web-site</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -126,11 +140,13 @@
                 src="images/limited_edition.jpg"
                 alt="Limited Edition"
               />
-              <h6>Limited Edition</h6>
-              <p>Design</p>
+              <div class="project-description">
+                <h3>Limited Edition</h3>
+                <p>Design</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -138,11 +154,13 @@
                 src="images/project_lab.jpg"
                 alt="Project LAB"
               />
-              <h6>Project LAB</h6>
-              <p>Marketing</p>
+              <div class="project-description">
+                <h3>Project LAB</h3>
+                <p>Marketing</p>
+              </div>
             </div>
           </li>
-          <li>
+          <li class="project-box">
             <div>
               <img
                 height="294"
@@ -150,24 +168,30 @@
                 src="images/growing_business.jpg"
                 alt="Growing Business"
               />
-              <h6>Growing Business</h6>
-              <p>Apps</p>
+              <div class="project-description">
+                <h3>Growing Business</h3>
+                <p>Apps</p>
+              </div>
             </div>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer class="global-footer">
-      <a href="index.html" class="logo"
-        ><span class="logo-web">Web</span>Studio</a
-      >
-      <address>695 Park Ave, NY 10065, USA</address>
-      <a href="tel:+1212-772-4150" class="link contact">+1 212-772-4150</a>
-      <br />
-      <a href="mailto:info@devstudio.com" class="link contact"
-        >info@devstudio.com</a
-      >
+    <footer class="footer-container">
+      <div class="global-footer">
+        <div class="footer-adress">
+          <a href="index.html" class="logo"
+            ><span class="logo-web">Web</span
+            ><span class="logo-studio-footer">Studio</span></a
+          >
+          <address>695 Park Ave, NY 10065, USA</address>
+          <a href="tel:+1212-772-4150" class="link contact">+1 212-772-4150</a>
+          <a href="mailto:info@devstudio.com" class="link contact mail"
+            >info@devstudio.com</a
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>

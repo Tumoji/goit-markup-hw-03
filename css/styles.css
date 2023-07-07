@@ -20,20 +20,27 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1600px;
 }
 
 .global-header {
   display: flex;
   width: 1200px;
+  padding: 0 10px;
   height: 80px;
   justify-content: space-between;
   align-items: center;
 }
+.border-header {
+  display: flex;
+  width: 1600px;
+  border-bottom: 1px solid #ececec;
+}
 .nav-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 500px;
+  padding-left: 50px;
+  padding-right: 200px;
 }
 .header-contacts {
   display: flex;
@@ -45,6 +52,8 @@ a:visited {
   display: flex;
   width: 270px;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 nav > ul > li > .menu {
@@ -86,6 +95,9 @@ ul {
 .logo-web {
   color: #2196f3;
 }
+.logo-studio-footer {
+  color: #fff;
+}
 
 .button {
   text-align: center;
@@ -122,46 +134,76 @@ button:hover {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
-.projects > p {
-  color: #757575;
-  line-height: 30px;
-  letter-spacing: 0.48px;
-}
 
-.projects > ul > li > div > h6 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 1.08px;
-}
 .projects {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 94px 0;
 }
+
+.project-description {
+  padding-left: 24px;
+}
+
+.project-description p {
+  color: #757575;
+}
+
 .portfolio-buttons-container {
   display: flex;
   justify-content: center;
-  background-color: rgb(44, 59, 72);
+  padding-bottom: 50px;
 }
 .portfolio-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 516px;
+  width: 540px;
+  margin: 0%;
+  padding: 0%;
 }
-main {
-  background-color: aquamarine;
-}
+
 .portfolio-container {
   display: flex;
 }
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 0%;
+  padding: 0%;
+}
+.project-box{
+  box-shadow:0px 0px 0px 1px #eee inset;
+  margin-bottom: 30px;
+}
+.footer-container {
+  display: flex;
+  justify-content: left;
+  background-color: #2f303a;
+  width: 1600px;
 }
 .global-footer {
   display: flex;
+  width: 1200px;
+  padding: 0 100px;
+}
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 60px 10px;
+}
+address {
+  color: #fff;
+  padding: 28px 0 12px 0;
+}
+
+footer div .contact {
+  color: #fff 60%;
+}
+
+footer div .contact.mail {
+  padding-top: 12px;
 }
