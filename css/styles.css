@@ -355,3 +355,9 @@ footer div .contact {
 footer div .contact.mail {
   padding-top: 12px;
 }
+
+.contacts {
+  display: flex;
+  align-content: center;
+  background-color: #000;
+}
